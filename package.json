@@ -1,0 +1,70 @@
+{
+  "name": "Pro-sports",
+  "author": "Lukas Stasak",
+  "homepage": "",
+  "private": true,
+  "scripts": {
+    "build": "ionic-app-scripts build",
+    "watch": "ionic-app-scripts watch",
+    "serve:before": "watch",
+    "emulate:before": "build",
+    "deploy:before": "build",
+    "build:before": "build",
+    "run:before": "build"
+  },
+  "dependencies": {
+    "@angular/common": "^2.0.0",
+    "@angular/compiler": "^2.0.0",
+    "@angular/compiler-cli": "^0.6.2",
+    "@angular/core": "^2.0.0",
+    "@angular/forms": "^2.0.0",
+    "@angular/http": "^2.0.0",
+    "@angular/platform-browser": "^2.0.0",
+    "@angular/platform-browser-dynamic": "^2.0.0",
+    "@angular/platform-server": "^2.0.0",
+    "@ionic/storage": "^1.0.3",
+    "angularfire2": "^2.0.0-beta.5",
+    "firebase": "^3.4.1",
+    "ionic-angular": "^2.0.0-rc.0",
+    "ionic-native": "^2.0.3",
+    "ionicons": "^3.0.0",
+    "rxjs": "^5.0.0-beta.12",
+    "zone.js": "^0.6.21"
+  },
+  "devDependencies": {
+    "@ionic/app-scripts": "latest",
+    "@types/firebase": "2.4.30",
+    "@types/request": "0.0.30",
+    "rxjs": "^5.0.0-rc.1",
+    "typescript": "^2.0.3"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard",
+
+    {
+      "id": "cordova-plugin-facebook4",
+      "locator": "cordova-plugin-facebook4",
+      "variables": {
+        "APP_ID": "1712888639034645",
+        "APP_NAME": "test-app"
+      }
+    }
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    {
+      "platform": "ios",
+      "version": "",
+      "locator": "ios"
+    }
+  ],
+  "description": "new-application: An Ionic project",
+  "config": {
+    "ionic_rollup": "./scripts/rollup.config.js"
+  }
+}
