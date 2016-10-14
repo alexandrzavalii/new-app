@@ -4,7 +4,8 @@ import { StatusBar } from 'ionic-native';
 
 // Import Pages
 import { LoginPage } from '../pages/login/login';
-import { HomePage } from  '../pages/home/home';
+import { TabsPage } from  '../pages/tabs/tabs';
+
 
 // Import AngularFire2
 import { AngularFire } from 'angularfire2';
@@ -19,7 +20,7 @@ export class MyApp {
 
     firebase.auth().onAuthStateChanged((user) => {
       if(user) {
-        this.rootPage = HomePage;
+        this.rootPage = TabsPage;
       }
       else {
         this.rootPage = LoginPage;

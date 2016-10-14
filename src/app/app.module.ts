@@ -7,6 +7,11 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
+import { FavoritesPage } from '../pages/favorites/favorites';
+import { MatchesPage } from '../pages/matches/matches';
+import { NewsPage } from '../pages/news/news';
+import { SocialPage } from '../pages/social/social';
+import { TabsPage } from '../pages/tabs/tabs';
 
 // Import providers
 import { AuthData } from '../providers/auth-data'
@@ -34,7 +39,12 @@ const myFirebaseAuthConfig = {
     MyApp,
     HomePage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    FavoritesPage,
+    MatchesPage,
+    NewsPage,
+    SocialPage,
+    TabsPage
 
   ],
   imports: [
@@ -46,7 +56,12 @@ const myFirebaseAuthConfig = {
     MyApp,
     HomePage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    FavoritesPage,
+    MatchesPage,
+    NewsPage,
+    SocialPage,
+    TabsPage
   ],
   providers: [
     AuthData

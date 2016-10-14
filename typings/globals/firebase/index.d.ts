@@ -386,6 +386,6 @@ declare namespace firebase.storage {
   }
 }
 
-declare module 'firebase' {
-  export = firebase;
-}
+// declare module 'firebase' {
+//   export = firebase;
+// }
